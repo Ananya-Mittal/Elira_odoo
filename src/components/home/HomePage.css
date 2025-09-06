@@ -1,0 +1,42 @@
+.hero-banner {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  padding: 2rem;
+  color: white;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4); /* dark overlay for text readability */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.shop-now-btn {
+  margin-top: 1.5rem;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  background: #ff6f61;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.shop-now-btn:hover {
+  background: #e85b4f;
+}

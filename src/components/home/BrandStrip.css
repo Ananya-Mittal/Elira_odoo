@@ -1,0 +1,194 @@
+.popular-brands {
+  padding: 4rem 2rem;
+  text-align: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  background: white;
+  position: relative;
+}
+
+.section-title {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  margin-bottom: 3rem;
+  background: linear-gradient(135deg, #333 0%, #667eea 50%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border-radius: 2px;
+}
+
+.brands-showcase {
+  margin-bottom: 4rem;
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 24px;
+  background: linear-gradient(135deg, #f8f9ff, #f1f3ff);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+}
+
+.brands-slider {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-card {
+  position: absolute;
+  width: 250px;
+  height: 200px;
+  background: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  opacity: 0.5;
+  transform: scale(0.8);
+}
+
+.brand-card.active {
+  opacity: 1;
+  transform: scale(1);
+  box-shadow: 0 20px 50px rgba(102, 126, 234, 0.2);
+}
+
+.brand-card:hover {
+  transform: scale(1.05) translateY(-10px);
+  box-shadow: 0 25px 60px rgba(102, 126, 234, 0.25);
+}
+
+.brand-logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.logo-icon {
+  font-size: 2rem;
+  color: white;
+}
+
+.brand-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.brand-description {
+  font-size: 0.9rem;
+  color: #666;
+  font-style: italic;
+}
+
+.slider-controls {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.5rem;
+}
+
+.control-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(102, 126, 234, 0.3);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.control-dot.active {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  transform: scale(1.2);
+}
+
+.control-dot:hover {
+  background: rgba(102, 126, 234, 0.6);
+}
+
+.brands-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.brand-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  border-radius: 16px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1);
+}
+
+.brand-item:hover {
+  transform: translateY(-10px);
+}
+
+.brand-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  font-size: 1.5rem;
+}
+
+.brand-text {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #444;
+}
+
+.partnership-banner {
+  padding: 2rem;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+}
+
+.partnership-banner h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.partnership-banner p {
+  font-size: 1rem;
+  opacity: 0.9;
+}

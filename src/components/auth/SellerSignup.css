@@ -1,0 +1,94 @@
+/* General container */
+.seller-signup {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #7c3aed, #9333ea);
+  padding: 2rem;
+  font-family: 'Inter', sans-serif;
+  color: #fff;
+}
+
+/* Form heading */
+.seller-signup h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+  text-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Form styling */
+.seller-signup form {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+/* Input fields */
+.seller-signup input {
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: all 0.3s ease;
+}
+
+.seller-signup input::placeholder {
+  color: #a78bfa; /* light purple placeholder */
+}
+
+.seller-signup input:focus {
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.4);
+  background-color: #fff;
+}
+
+/* Submit button */
+.seller-signup button {
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  border: none;
+  background: linear-gradient(90deg, #7c3aed, #9333ea);
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(124, 58, 237, 0.3);
+}
+
+.seller-signup button:hover {
+  background: linear-gradient(90deg, #9333ea, #7c3aed);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(124, 58, 237, 0.4);
+}
+
+.seller-signup button:active {
+  transform: translateY(0);
+  box-shadow: 0 5px 15px rgba(124, 58, 237, 0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 500px) {
+  .seller-signup form {
+    padding: 1.5rem;
+    width: 90%;
+  }
+
+  .seller-signup h2 {
+    font-size: 1.75rem;
+  }
+}
